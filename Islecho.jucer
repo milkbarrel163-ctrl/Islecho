@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="IslJc1" name="Islecho" projectType="guiapp" version="0.35.0"
+              bundleIdentifier="studio.pulsefield.instrument.jucepreview" companyName="Islecho"
+              cppLanguageStandard="17" useAppConfig="0" addUsingNamespaceToJuceHeader="0"
+              reportAppUsage="0" defines="JUCE_WEB_BROWSER=0&#10;JUCE_USE_CURL=0"
+              headerPath="../../Source/DSP" jucerFormatVersion="1" displaySplashScreen="1">
+  <MAINGROUP id="IslGrp" name="Islecho">
+    <GROUP id="IslSrc" name="Source">
+      <FILE id="IslMai" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="IslTyp" name="IslechoTypes.h" compile="0" resource="0" file="Source/IslechoTypes.h"/>
+      <FILE id="IslWch" name="WorldComponent.h" compile="0" resource="0"
+            file="Source/WorldComponent.h"/>
+      <FILE id="IslWcc" name="WorldComponent.cpp" compile="1" resource="0"
+            file="Source/WorldComponent.cpp"/>
+      <FILE id="IslIsh" name="IslandScene.h" compile="0" resource="0" file="Source/IslandScene.h"/>
+      <FILE id="IslIsc" name="IslandScene.cpp" compile="1" resource="0" file="Source/IslandScene.cpp"/>
+      <FILE id="IslOmh" name="OrganismMesh.h" compile="0" resource="0" file="Source/OrganismMesh.h"/>
+      <FILE id="IslEsh" name="EcologySimulation.h" compile="0" resource="0"
+            file="Source/EcologySimulation.h"/>
+      <FILE id="IslEsc" name="EcologySimulation.cpp" compile="1" resource="0"
+            file="Source/EcologySimulation.cpp"/>
+      <FILE id="IslPsh" name="Persistence.h" compile="0" resource="0" file="Source/Persistence.h"/>
+      <FILE id="IslPsc" name="Persistence.cpp" compile="1" resource="0" file="Source/Persistence.cpp"/>
+      <FILE id="IslSmh" name="SongMode.h" compile="0" resource="0" file="Source/SongMode.h"/>
+      <FILE id="IslEah" name="EnvironmentAudio.h" compile="0" resource="0"
+            file="Source/EnvironmentAudio.h"/>
+      <FILE id="IslLdh" name="LifeDynamics.h" compile="0" resource="0" file="Source/LifeDynamics.h"/>
+    </GROUP>
+    <GROUP id="IslDsp" name="DSP">
+      <FILE id="v3l439" name="EnvironmentSynth.h" compile="0" resource="0"
+            file="Source/DSP/EnvironmentSynth.h"/>
+      <FILE id="ZL0NSQ" name="PulseDSP.cpp" compile="1" resource="0" file="Source/DSP/PulseDSP.cpp"/>
+      <FILE id="L51AdT" name="PulseDSP.h" compile="0" resource="0" file="Source/DSP/PulseDSP.h"/>
+      <FILE id="Lrd43w" name="RecordingCapture.cpp" compile="1" resource="0"
+            file="Source/DSP/RecordingCapture.cpp"/>
+      <FILE id="hElAKY" name="RecordingCapture.h" compile="0" resource="0"
+            file="Source/DSP/RecordingCapture.h"/>
+      <FILE id="QbnBit" name="SongTransport.h" compile="0" resource="0" file="Source/DSP/SongTransport.h"/>
+    </GROUP>
+    <GROUP id="IslAst" name="Assets">
+      <FILE id="dSPpFP" name="BroadleafA.pfmesh" compile="0" resource="1"
+            file="Source/Assets/BroadleafA.pfmesh"/>
+      <FILE id="SfUDjn" name="BroadleafB.pfmesh" compile="0" resource="1"
+            file="Source/Assets/BroadleafB.pfmesh"/>
+      <FILE id="QyqBsL" name="FallenLog.pfmesh" compile="0" resource="1"
+            file="Source/Assets/FallenLog.pfmesh"/>
+      <FILE id="b5lyHE" name="FallenLogArch.pfmesh" compile="0" resource="1"
+            file="Source/Assets/FallenLogArch.pfmesh"/>
+      <FILE id="kgzUcC" name="FallenLogBole.pfmesh" compile="0" resource="1"
+            file="Source/Assets/FallenLogBole.pfmesh"/>
+      <FILE id="mxXQcX" name="FallenLogFork.pfmesh" compile="0" resource="1"
+            file="Source/Assets/FallenLogFork.pfmesh"/>
+      <FILE id="PJOHbU" name="FallenLogSmall.pfmesh" compile="0" resource="1"
+            file="Source/Assets/FallenLogSmall.pfmesh"/>
+      <FILE id="tMjVS1" name="LakesideRock.pfmesh" compile="0" resource="1"
+            file="Source/Assets/LakesideRock.pfmesh"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_IPHONE targetFolder="Builds/iOS" iosDeviceFamily="1" iosScreenOrientation="UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  iPadScreenOrientation="UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight"
+                  UIRequiresFullScreen="1" iosDevelopmentTeamID="PK38B9BLC5" buildNumber="49"
+                  bigIcon="IslIcn" smallIcon="IslIcn">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" targetName="Islecho JUCE Preview" iosDeploymentTarget="17.0"/>
+        <CONFIGURATION name="Release" isDebug="0" targetName="Islecho JUCE Preview"
+                       iosDeploymentTarget="17.0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../../juce-9.0.4-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+    <XCODE_MAC targetFolder="Builds/macOS" bigIcon="IslIcn" smallIcon="IslIcn">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" targetName="Islecho JUCE Preview"/>
+        <CONFIGURATION name="Release" isDebug="0" targetName="Islecho JUCE Preview"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../../juce-9.0.4-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2026 targetFolder="Builds/VisualStudio2026">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="D:\juce-9.0.4-windows\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../../juce-9.0.4-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2026>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
